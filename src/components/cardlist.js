@@ -8,9 +8,9 @@ const Cardlist = ({ Robots }) => {
 			Robots.map((user, i) => {
 				return <Card 
 					key={i}
-					id={Robots[i].id} 
+					id={i+1} 
 					name={Robots[i].name} 
-					email={Robots[i].email}/>
+					email={Robots[i].created}/>
 				})
 			}
 		</div>
